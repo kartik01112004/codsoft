@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
         return firstOperand / secondOperand;
       case "%":
         return (firstOperand * secondOperand) / 100;
-      case "sqrt":
-        return firstOperand ** 2;
+      case "sqr":
+        return firstOperand ** secondOperand;
       case "root":
         return nthRoot(firstOperand, secondOperand);
       default:

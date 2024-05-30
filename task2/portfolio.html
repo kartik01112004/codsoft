@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kartik</title>
+    <title>Kartik Goel</title>
     <link rel="stylesheet" href="style.css" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -17,9 +24,10 @@
         Architecture(Learning) | Google Cloud
       </p>
     </header>
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -28,61 +36,89 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I'm a 3nd year B.Tech Computer Science Engineering Student at
+          I'm a 3rd year B.Tech Computer Science Engineering Student at
           Maharishi Markandeshwar University. I am learning blockchain
-          technology to make security possible.
-          <br>
-
-          All I want is to eventualy
-          make something that is groundbreaking for our civilization. 
-          <br>
-
-          My main focus is blockchain, I have deep understanding of Flutter,
-          JavaScript, Solidity, Hardhat, Node.js.I have worked with and can work
-          with different technologies to implement scaleable and robust
-          solutions.
+          technology to enhance security.
         </p>
-        <img src="" alt="Profile Picture" />
-     
+        <p>
+          My goal is to eventually create something groundbreaking for our
+          civilization.
+        </p>
+        <p>
+          My main focus is blockchain. I have a deep understanding of Flutter,
+          JavaScript, Solidity, Hardhat, and Node.js. I can work with various
+          technologies to implement scalable and robust solutions.
+        </p>
+        <img src="kartik.jpg" alt="Kartik Goel's Profile Picture" />
       </section>
-    <section id="projects">
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+          <div class="skill"><i class="fas fa-lock"></i> Solidity</div>
+          <div class="skill"><i class="fas fa-hat-wizard"></i> Hardhat</div>
+          <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+          <div class="skill"><i class="fas fa-database"></i> MySQL</div>
+          <div class="skill"><i class="fas fa-database"></i> MongoDB</div>
+          <div class="skill"><i class="fab fa-docker"></i> Docker</div>
+          <div class="skill"><i class="fab fa-android"></i> Flutter</div>
+          <div class="skill"><i class="fas fa-cloud"></i> Google Cloud</div>
+        </div>
+      </section>
+      <section id="projects">
         <h2>Projects</h2>
         <div class="project-card">
           <h3>Fund Me</h3>
           <p>
-            This is simple "FundMe" contract in Solidity. A smart contract on
-            the Ethereum blockchain that allows users to send Ether to the
-            contract, typically for funding purposes. This type of contract is
-            often used for crowdfunding, donations, or similar activities.
-            <br >
-            <h3>Key Features: </h3>
-            <br >
+            A simple "FundMe" contract in Solidity. A smart contract on the
+            Ethereum blockchain that allows users to send Ether to the contract,
+            typically for crowdfunding or donations.
+          </p>
+          <ul>
             <li>
-            Accepting Funds: The contract allows users to send Ether to it.
+              Accepting Funds: The contract allows users to send Ether to it.
             </li>
-            <br >
             <li>
-            Tracking Funders: It keeps track of who sent funds and how much
+              Tracking Funders: It keeps track of who sent funds and how much
               they sent.
             </li>
-            <br >
-            <li>
-            Owner Withdrawal: Only the owner (the person who deployed the
-              contract) can withdraw the funds.
-            </li>
-          </p>
-          <a href="https://github.com/kartik01112004/hardhat-fund-me">View Project</a>
-       
+            <li>Owner Withdrawal: Only the owner can withdraw the funds.</li>
+          </ul>
+          <a
+            href="https://github.com/kartik01112004/hardhat-fund-me"
+            target="_blank"
+            >View Project</a
+          >
         </div>
         <div class="project-card">
-          <h3>LSD(Life support development)</h3>
-          <p>Many individuals experience anxiety or panic attacks but may struggle to document and understand their occurrences adequately. Existing methods often lack specificity, merely noting the event's happening without delving into crucial details such as symptoms, triggers, and control measures. This deficiency impedes users ability to gain self-awareness, track progress, and identify patterns, ultimately hindering effective management of their condition. To address this, there is a need for a comprehensive reporting system that prompts users to provide detailed information about their anxiety or panic attacks, empowering them to gain insights, receive personalized support, and access tailored interventions.</p>
-          <a href="https://github.com/kartik01112004/LSD">View Project</a>
-          </div>
-        </section>
+          <h3>LSD (Life Support Development)</h3>
+          <p>
+            This project aims to help individuals with anxiety or panic attacks
+            by providing a comprehensive reporting system. It prompts users to
+            provide detailed information about their experiences, empowering
+            them to gain insights, receive personalized support, and access
+            tailored interventions.
+          </p>
+          <a href="https://github.com/kartik01112004/LSD" target="_blank"
+            >View Project</a
+          >
+        </div>
+      </section>
       <section id="contact">
         <h2>Contact Me</h2>
         <p>Feel free to reach out for any inquiries.</p>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
         <ul>
           <li><a href="mailto:kartikgoel018@gmail.com">Email</a></li>
           <li>
@@ -93,11 +129,25 @@
             >
           </li>
         </ul>
-        <h4>For More Projects: <a href="https://github.com/kartik01112004"> GitHub</a></h4>
+        <h4>
+          For More Projects:
+          <a href="https://github.com/kartik01112004" target="_blank">GitHub</a>
+        </h4>
       </section>
     </main>
     <footer>
       <p>&copy; 2024 Kartik Goel</p>
     </footer>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
   </body>
 </html>
